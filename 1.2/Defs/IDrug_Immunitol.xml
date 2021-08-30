@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="MakeableDrugBase">
     <defName>Immunitol</defName>
     <label>immunitol injection</label>
@@ -71,8 +70,6 @@
       </li>
     </comps>
   </ThingDef>
-
-
   <ChemicalDef>
     <defName>ImmunitolChemical</defName>
     <label>Immunitol chemical interface</label>
@@ -80,7 +77,6 @@
     <toleranceHediff>ImmunitolTolerance</toleranceHediff>
     <onGeneratedAddictedToleranceChance>0.0</onGeneratedAddictedToleranceChance>
   </ChemicalDef>
-
   <NeedDef ParentName="DrugAddictionNeedBase">
     <defName>ImmunitolNeed</defName>
     <needClass>Need_Chemical</needClass>
@@ -88,7 +84,6 @@
     <description>Immunitol is non addictive, but here we are. How did you do this?</description>
     <listPriority>25</listPriority>
   </NeedDef>
-
   <HediffDef>
     <defName>ImmunitolEffect</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -104,15 +99,14 @@
         <severityPerDay>-30</severityPerDay>
       </li>
     </comps>
-      <stages>
-        <li>
-          <statOffsets>
-            <ImmunityGainSpeed>2</ImmunityGainSpeed>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeed>2</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
-
   <HediffDef ParentName="DrugToleranceBase">
     <defName>ImmunitolTolerance</defName>
     <label>Immunitol tolerance</label>
@@ -138,7 +132,6 @@
       </li>
     </hediffGivers>
   </HediffDef>
-
   <HediffDef ParentName="AddictionBase">
     <defName>ImmunitolAddiction</defName>
     <hediffClass>Hediff_Addiction</hediffClass>
@@ -164,7 +157,6 @@
       </li>
     </stages>
   </HediffDef>
-
   <HediffDef>
     <defName>ImmunitolOverdose</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -211,5 +203,4 @@
       </li>
     </stages>
   </HediffDef>
-
 </Defs>

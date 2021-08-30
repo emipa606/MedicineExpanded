@@ -1,106 +1,123 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--
   <ThingDef ParentName="MakeableDrugBase">
-    <defName>Miasma</defName>
-    <label>miasma sage</label>
-    <description>Miasma sage is a curated mix of many herbs, spices, and mineral powder. This substance is bound together and balmed onto their face and neck. Helps to block diseases and poisons.</description>
+    <defName>Immunitol</defName>
+    <label>immunitol injection</label>
+    <description>Immunitol is a pressed pill that stimulates the body's ability to fight disease and virus: with a heightened immune system! Be careful with use: too much in a short time can cause liver damage.</description>
     <descriptionHyperlinks>
-      <HediffDef>MiasmaEffect</HediffDef>
+      <HediffDef>ImmunitolEffect</HediffDef>
+      <HediffDef>ImmunitolAddiction</HediffDef>
+      <HediffDef>ImmunitolTolerance</HediffDef>
+      <HediffDef>ImmunitolOverdose</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Miasma</texPath>
+      <texPath>Immunitol</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>57</WorkToMake>
-      <MarketValue>4</MarketValue>
+      <WorkToMake>450</WorkToMake>
+      <MarketValue>11</MarketValue>
       <Mass>0.01</Mass>
-      <DeteriorationRate>6</DeteriorationRate>
+      <DeteriorationRate>3</DeteriorationRate>
       <Flammability>1</Flammability>
     </statBases>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Industrial</techLevel>
     <ingestible>
-      <foodType>Plant, Processed</foodType>
-      <baseIngestTicks>800</baseIngestTicks>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>120</baseIngestTicks>
       <nurseable>false</nurseable>
       <drugCategory>Medical</drugCategory>
       <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Smearing {0} balm</ingestCommandString>
-      <ingestReportString>Smearing {0} balm.</ingestReportString>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting immunitol {0}.</ingestReportString>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>MiasmaEffect</hediffDef>
+          <hediffDef>ImmunitolEffect</hediffDef>
           <severity>1.0</severity>
-          <toleranceChemical>MiasmaChemical</toleranceChemical>
+          <toleranceChemical>ImmunitolChemical</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ImmunitolOverdose</hediffDef>
+          <severity>.35</severity>
+          <toleranceChemical>ImmunitolChemical</toleranceChemical>
         </li>
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
       <recipeUsers>
-        <li>CraftingSpot</li>
         <li>DrugLab</li>
       </recipeUsers>
+      <researchPrerequisite>Research_AdvancedMedicine</researchPrerequisite>
       <workSpeedStat>DrugCookingSpeed</workSpeedStat>
     </recipeMaker>
     <costList>
-      <MedicineHerbal>4</MedicineHerbal>
+      <MedicineHerbal>1</MedicineHerbal>
+      <SmokeleafLeaves>3</SmokeleafLeaves>
+      <Steel>1</Steel>
     </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>ImmunitolChemical</chemical>
+        <addictiveness>0.000</addictiveness>
+        <minToleranceToAddict>999</minToleranceToAddict>
+        <overdoseSeverityOffset>
+          <min>0.05</min>
+          <max>0.15</max>
+        </overdoseSeverityOffset>
+        <listOrder>100</listOrder>
+      </li>
+    </comps>
   </ThingDef>
-
-
   <ChemicalDef>
-    <defName>MiasmaChemical</defName>
-    <label>Miasma chemical interface</label>
-    <addictionHediff>MiasmaAddiction</addictionHediff>
-    <toleranceHediff>MiasmaTolerance</toleranceHediff>
+    <defName>ImmunitolChemical</defName>
+    <label>Immunitol chemical interface</label>
+    <addictionHediff>ImmunitolAddiction</addictionHediff>
+    <toleranceHediff>ImmunitolTolerance</toleranceHediff>
     <onGeneratedAddictedToleranceChance>0.0</onGeneratedAddictedToleranceChance>
   </ChemicalDef>
-
   <NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>MiasmaNeed</defName>
+    <defName>ImmunitolNeed</defName>
     <needClass>Need_Chemical</needClass>
-    <label>Miasma need</label>
-    <description>Miasma is non addictive, but here we are. How did you do this?</description>
+    <label>Immunitol need</label>
+    <description>Immunitol is non addictive, but here we are. How did you do this?</description>
     <listPriority>25</listPriority>
   </NeedDef>
-
   <HediffDef>
-    <defName>MiasmaEffect</defName>
+    <defName>ImmunitolEffect</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>miasma boosted</label>
-    <description>Active miasma sage covering the face and neck, which helps protect the user from diseases and poisons.</description>
-    <labelNoun>miasma balm</labelNoun>
+    <label>Immunitol boosted</label>
+    <description>Active immunitol in the body. Increases immunity gain speed but it doesn't last very long. Be careful with repeated use.</description>
+    <labelNoun>immunitol injection</labelNoun>
     <defaultLabelColor>(0.5,0.5,0)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.20</severityPerDay>
+        <severityPerDay>-30</severityPerDay>
       </li>
     </comps>
-      <stages>
-        <li>
-          <statOffsets>
-            <ToxicSensitivity>0.50</ToxicSensitivity>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeed>2</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
-
   <HediffDef ParentName="DrugToleranceBase">
-    <defName>MiasmaTolerance</defName>
-    <label>Miasma tolerance</label>
-    <description>Miasma tolerance is easy to shake and doesn't have a withdrawal. If your tolerance is increased too high you may suffer liver damage. Take infrequently.</description>
+    <defName>ImmunitolTolerance</defName>
+    <label>Immunitol tolerance</label>
+    <description>Immunitol tolerance is easy to shake and doesn't have a withdrawal. If your tolerance is increased too high you may suffer liver damage. Take infrequently.</description>
     <scenarioCanAdd>false</scenarioCanAdd>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.25</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>MiasmaChemical</chemical>
+        <chemical>ImmunitolChemical</chemical>
       </li>
     </comps>
     <hediffGivers>
@@ -115,13 +132,12 @@
       </li>
     </hediffGivers>
   </HediffDef>
-
   <HediffDef ParentName="AddictionBase">
-    <defName>MiasmaAddiction</defName>
+    <defName>ImmunitolAddiction</defName>
     <hediffClass>Hediff_Addiction</hediffClass>
-    <label>Miasma addiction</label>
-    <description>Miasma is non addictive, but can cause liver damage.</description>
-    <causesNeed>MiasmaNeed</causesNeed>
+    <label>Immunitol addiction</label>
+    <description>Immunitol is non addictive, but can cause liver damage.</description>
+    <causesNeed>ImmunitolNeed</causesNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-100.0</severityPerDay>
@@ -141,12 +157,11 @@
       </li>
     </stages>
   </HediffDef>
-
   <HediffDef>
-    <defName>MiasmaOverdose</defName>
+    <defName>ImmunitolOverdose</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>Miasma overdose</label>
-    <description>Miasma should be taken infrequently in order to reduce the chance of liver failure. Some caution should be used.</description>
+    <label>Immunitol overdose</label>
+    <description>Immunitol should be taken infrequently in order to reduce the chance of liver failure. Some caution should be used.</description>
     <maxSeverity>1</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
@@ -188,5 +203,4 @@
       </li>
     </stages>
   </HediffDef>
--->
 </Defs>

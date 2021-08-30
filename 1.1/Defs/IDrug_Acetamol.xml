@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="MakeableDrugBase">
     <defName>Acetamol</defName>
     <label>acetamol pill</label>
@@ -86,8 +85,6 @@
       </li>
     </comps>
   </ThingDef>
-
-
   <ChemicalDef>
     <defName>Acetamol</defName>
     <label>acetamol</label>
@@ -95,7 +92,6 @@
     <toleranceHediff>PsychiteTolerance</toleranceHediff>
     <onGeneratedAddictedToleranceChance>0.0</onGeneratedAddictedToleranceChance>
   </ChemicalDef>
-
   <HediffDef>
     <defName>Acetamol</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -111,19 +107,18 @@
         <severityPerDay>-1.2</severityPerDay>
       </li>
     </comps>
-      <stages>
-        <li>
-          <painOffset>-0.20</painOffset>
-          <capMods>
-            <li>
-              <capacity>BloodPumping</capacity>
-              <offset>0.15</offset>
-            </li>
-          </capMods>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <painOffset>-0.20</painOffset>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
   </HediffDef>
-
   <HediffDef>
     <defName>Acetamol_Overdose</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -169,5 +164,4 @@
       </li>
     </stages>
   </HediffDef>
-
 </Defs>

@@ -1,11 +1,96 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Medicine Expanded</name>
+  <name>Medicine Expanded (Continued)</name>
+  <packageId>Mlie.MedicineExpanded</packageId>
   <author>Neceros</author>
+  <url>https://github.com/emipa606/MedicineExpanded</url>
   <supportedVersions>
-      <li>1.1</li>
-      <li>1.2</li>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
-  <packageId>neceros.medicineexpanded</packageId>
-  <description>“Let food be your medicine and medicine be your food.”\n― Hippocrates</description>
+  <modDependencies />
+  <loadAfter />
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of Neceross mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=2049984501
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/MedicineExpanded][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+Expand your medicine cabinet with pain reduction drugs. Introduces a line of drugs with amazing pain suppression and euphoria inducing effects, though they do cause chemical addiction. Also, this mod allows you to make medicine in bulk.
+
+
+[b]Sorry, but I'm no longer maintaining my mods. Maybe in the future[/b]
+[i]Please note 99% of my mods are MIT licensed, meaning you can do whatever you want with it with the requirement of crediting me.[/i]
+
+
+[b]Please note:[/b]
+These drugs are designed for rimworld fun. Do not expect real world similarities in effects and addictiveness. This is a game.
+
+
+[img]https://i.imgur.com/g69KRUw.png[/img]
+
+[img]https://i.imgur.com/vKtwA77.png[/img]
+[b]Acetamol[/b]: mild non-addictive painkiller, though using too much can cause chemical damage
+[i][b]Cost[/b]: 1 herbal medicine  and 1 wood log[/i]
+
+[img]https://i.imgur.com/0OONkES.png[/img]
+[b]Opimol[/b]: moderate painkiller in the form of a gummy-paste, with some chance for addiction
+[i][b]Cost[/b]: 1 herbal medicine and 3 psychoid leaves[/i]
+
+[img]https://i.imgur.com/dyqXSxY.png[/img]
+[b]Vicomol[/b]: good painkiller with moderate addiction chance, induces euphoria
+[i][b]Cost[/b]: 1 opimol and 1 neutroamine[/i]
+
+[img]https://i.imgur.com/NTTDnxQ.png[/img]
+[b]Oxymol[/b]: amazing painkiller with terrifying addictiveness. High euphoria!
+[i][b]Cost[/b]: 2 opimol,1 neutroamine, and 10 silver[/i]
+
+[img]https://i.imgur.com/8WJxTz3.png[/img]
+[b]Immunitol[/b]: quick strong boost to immune system
+[i][b]Cost[/b]: 1 herbal medicine, 3 smokeleaf leaves, and 1 steel[/i]
+
+
+[h1]Languages[/h1]
+Japanese (Proxyer)
+
+
+[img]https://i.imgur.com/2Zpv4mk.png[/img]
+
+[img]https://i.imgur.com/NpuFU7v.png[/img]
+
+[b]Github:[/b] https://github.com/Neceros/MedicineExpanded
+
+[img]https://i.imgur.com/s3KRLlu.gif[/img]
+
+[b]Get help, Ask questions, Give suggestions:[/b]
+[url=https://discord.gg/AvV7DT5][img]https://i.imgur.com/lkEpF5w.png[/img][/url]
+
+[b]My mods:[/b]
+[url=https://steamcommunity.com/id/TheBigN/myworkshopfiles/?appid=294100&amp;p=1&amp;numperpage=30][img]https://i.imgur.com/MD0xY84.png[/img][/url]
+
+[b]Like these mods? Support me so I can make more:[/b]
+[url=https://ko-fi.com/Q5Q019Y8A][img]https://i.imgur.com/EHcTTRx.png[/img][/url]
+
+[i]MIT License; Copyright (c) 2020 Billy Barnes[/i]
+
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
