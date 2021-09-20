@@ -5,8 +5,17 @@
 Update of Neceross mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2049984501
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://i.imgur.com/CN9Rs5X.png)
 
+
+[table]
+    [tr]
+        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
+[/td]
+        [td]https://github.com/emipa606/MedicineExpanded]![Image](https://i.imgur.com/kTkpTOE.png)
+[/td]
+    [/tr]
+[/table]
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -61,21 +70,11 @@ Japanese (Proxyer)
 ![Image](https://i.imgur.com/NpuFU7v.png)
 
 
-**Github:** https://github.com/Neceros/MedicineExpanded
-
 ![Image](https://i.imgur.com/s3KRLlu.gif)
 
 
-**Get help, Ask questions, Give suggestions:**
-https://discord.gg/AvV7DT5]![Image](https://i.imgur.com/lkEpF5w.png)
-
-
 **My mods:**
-https://steamcommunity.com/id/TheBigN/myworkshopfiles/?appid=294100&amp;p=1&amp;numperpage=30]![Image](https://i.imgur.com/MD0xY84.png)
-
-
-**Like these mods? Support me so I can make more:**
-https://ko-fi.com/Q5Q019Y8A]![Image](https://i.imgur.com/EHcTTRx.png)
+https://steamcommunity.com/id/TheBigN/myworkshopfiles/?appid=294100&p=1&numperpage=30]![Image](https://i.imgur.com/MD0xY84.png)
 
 
 *MIT License; Copyright (c) 2020 Billy Barnes*
